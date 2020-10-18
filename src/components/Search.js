@@ -50,10 +50,10 @@ const Search=()=>
     })
     if(renderedResults.length!==0)
     {
-        return(<div>
+        return(<div className="container">
             <div className="ui form" style={{marginTop: "20px",width: "80%",margin: "auto"}}>
             <div className="field">
-                <label>Enter search term</label>
+                <p>Enter search term</p>
                 <input className="input" value={term} onChange={(e)=>
                 {
                     setTerm(e.target.value)
@@ -66,10 +66,10 @@ const Search=()=>
             </div>)
     }
        
-    return(<>
+    return(<div className="container">
         <div className="ui form" style={{marginTop: "20px",width: "80%",margin: "auto"}}>
         <div className="field">
-            <label>Enter search term</label>
+            <p>Enter search term</p>
             <input className="input" value={term} onChange={(e)=>
             {
                 setTerm(e.target.value)
@@ -81,11 +81,12 @@ const Search=()=>
 
             </div>
             <div className="col-6">
-            <img src="https://i.pinimg.com/originals/78/e8/26/78e826ca1b9351214dfdd5e47f7e2024.gif" style=
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/New-Bouncywikilogo.gif" style=
             {{
-                height: "500px",
-                width: "700px",
-                marginLeft: "50px"
+                height: "300px",
+                width: "300px",
+                marginLeft: "200px",
+                marginTop: "120px"
             }}/>
 
             </div>
@@ -95,7 +96,7 @@ const Search=()=>
                 
                 </div>
         </div>
-        </>)
+        </div>)
 }
 
 export default Search
